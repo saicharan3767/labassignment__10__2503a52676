@@ -1,0 +1,213 @@
+LAB 10.1
+
+QUESTION-1
+
+Task Description #1 – Syntax and Logic Errors
+Task: Use AI to identify and fix syntax and logic errors in a faulty
+Python script.
+Sample Input Code:
+# Calculate average score of a student
+def calc_average(marks):
+
+Week5 -
+Monday
+
+total = 0
+for m in marks:
+total += m
+average = total / len(marks)
+return avrage # Typo here
+marks = [85, 90, 78, 92]
+print(&quot;Average Score is &quot;, calc_average(marks)
+Expected Output:
+ Corrected and runnable Python code with explanations of the
+fixes.
+
+
+PROMPT: GIVE ME CORRECTED CODE AND FIX THE ERRORS
+
+CODE:
+
+def calc_average(marks):
+    total = 0
+    for m in marks:
+        total += m
+    average = total / len(marks)
+    return average
+
+
+marks = [85, 90, 78, 92]
+print("Average Score is", calc_average(marks))
+
+
+OUTPUT:
+
+Average Score is 86.25
+
+QUESTION-2
+
+
+Task Description #2 – PEP 8 Compliance
+Task: Use AI to refactor Python code to follow PEP 8 style
+guidelines.
+Sample Input Code:
+def area_of_rect(L,B) : return L*B
+print(area_of_rect(10,20))
+Expected Output:
+ Well-formatted PEP 8-compliant Python code.
+
+PROMPT: GIVE ME CORRECTED CODE AND FIX THE ERRORS
+
+CODE:
+
+def area_of_rect(L, B):
+    return L * B
+
+
+print(area_of_rect(10, 20))
+
+
+output:
+
+200
+
+QUESTION-3
+
+Task Description #3 – Readability Enhancement
+Task: Use AI to make code more readable without changing its
+logic.
+Sample Input Code:
+def c(x,y):
+return x*y/100
+a=200
+b=15
+print(c(a,b))
+Expected Output:
+ Python code with descriptive variable names, inline
+
+comments, and clear formatting.
+
+PROMPT: GIVE ME CORRECTED CODE AND FIX THE ERRORS
+
+CODE:
+
+def c(x, y):
+    return x * y / 100
+
+
+a = 200
+b = 15
+print(c(a, b))
+
+
+OUTPUT:
+
+30.0
+
+
+QUESTION-4
+
+Task Description #4 – Refactoring for Maintainability
+Task: Use AI to break repetitive or long code into reusable
+functions.
+Sample Input Code:
+students = [&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;]
+print(&quot;Welcome&quot;, students[0])
+print(&quot;Welcome&quot;, students[1])
+print(&quot;Welcome&quot;, students[2])
+Expected Output:
+ Modular code with reusable functions.
+
+PROMPT: GIVE ME CORRECTED CODE AND FIX THE ERRORS
+
+CODE:
+
+students = ["Alice", "Bob", "Charlie"]
+
+for student in students:
+    print("Welcome", student)
+
+OUTPUT:
+
+Welcome Alice
+Welcome Bob
+Welcome Charlie
+
+QUESTION-5
+
+Task Description #5 – Performance Optimization
+Task: Use AI to make the code run faster.
+Sample Input Code:
+# Find squares of numbers
+nums = [i for i in range(1,1000000)]
+squares = []
+
+for n in nums:
+squares.append(n**2)
+print(len(squares))
+Expected Output:
+ Optimized code using list comprehensions or vectorized
+operations.
+
+PROMPT: GIVE ME CORRECTED CODE AND FIX THE ERRORS
+
+CODE:
+
+nums = [i for i in range(1, 1_000_000)]
+squares = []
+
+for n in nums:
+    squares.append(n**2)
+
+print(len(squares))
+
+
+OUTPUT:
+
+999999
+
+QUESTION-6
+
+Task Description #6 – Complexity Reduction
+Task: Use AI to simplify overly complex logic.
+Sample Input Code:
+def grade(score):
+if score &gt;= 90:
+return &quot;A&quot;
+else:
+if score &gt;= 80:
+return &quot;B&quot;
+else:
+if score &gt;= 70:
+return &quot;C&quot;
+else:
+if score &gt;= 60:
+return &quot;D&quot;
+else:
+return &quot;F&quot;
+Expected Output:
+ Cleaner logic using elif or dictionary mapping.
+
+
+PROMPT: GIVE ME CORRECTED CODE AND FIX THE ERRORS
+
+CODE:
+
+def grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
+
+
+print(grade(85))
+
+
+OUTPUT:
+8
